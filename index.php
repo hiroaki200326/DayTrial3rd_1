@@ -49,6 +49,41 @@
         } else{
           echo "もっと高得点を狙えるはず！引き続き頑張ろう！";
         }
+
+        echo "<br>";
+
+        // DAY3
+        $scores = [96,87,67,21];
+        echo $scores[1];
+        echo "<br>";
+        $scores[] = 25;
+        echo $scores[4];
+        echo "<br>";
+        array_push($scores,0);
+        echo $scores[5];
+        echo "<br>";
+        // array_merge($scores, [0,1]);
+        // echo $scores[6];
+        // echo "<br>";
+        foreach ($scores as $score){
+          echo $score."<br>";
+        }
+        echo $score;
+        
+        echo "<br>";
+
+        $scores = [
+          "数学" => 89,
+          "英語" => 76,
+          "理科" => 35,
+          "社会" => 83,
+        ];
+        echo $scores["理科"]."<br>";
+        $scores["理科"] = "不明";
+        echo $scores["理科"]."<br>";
+        $scores["国語"] = 11;
+        echo $scores["国語"]."<br>";
+
       ?>
     </h2>
 </body>
